@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.35714.111
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransferClient", "FileTransferClient\FileTransferClient.csproj", "{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7C33113-BF70-439C-B372-9603E2D1DEB6}
+	EndGlobalSection
+EndGlobal

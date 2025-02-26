@@ -1,0 +1,9 @@
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.csproj.AssemblyReference.cache
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.Presentation.Controls.FileBrowser.FileBrowserControl.resources
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.Presentation.Controls.TransferQueue.TransferItemControl.resources
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.Presentation.Views.MainForm.resources
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.Presentation.Views.TransferQueueWindow.resources
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.Properties.Resources.resources
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.csproj.GenerateResource.cache
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.csproj.CoreCompileInputs.cache
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\FileTransferClient.csprojAssemblyReference.cache
