@@ -5,7 +5,13 @@
     <Compile Update="Presentation\Controls\FileBrowser\FileBrowserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Presentation\Controls\TransferQueue\TransferItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Presentation\Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\ProfileListForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentation\Views\TransferQueueWindow.cs">

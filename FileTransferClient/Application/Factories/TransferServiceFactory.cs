@@ -12,12 +12,12 @@ namespace FileTransferClient.Application.Factories
         /// <summary>
         /// Creates a file transfer strategy based on protocol type.
         /// </summary>
-        public static IFileTransferStrategy CreateStrategy(string protocolType)
+        public static IFileTransferStrategy CreateStrategy(string protocolType, string encryption = "None")
         {
             switch (protocolType.ToLower())
             {
                 case "ftp":
-                    return new FtpStrategy();
+                    return new FtpStrategy(encryption);
                 case "sftp":
                     return new SftpStrategy();
                 default:

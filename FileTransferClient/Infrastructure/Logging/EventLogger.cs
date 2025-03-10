@@ -1,12 +1,12 @@
 ﻿using System;
 using Serilog;
-using Serilog.Sinks.SystemConsole;
 
 namespace FileTransferClient.Infrastructure.Logging
 {
     public static class EventLogger
     {
         private static ILogger _logger;
+        private static Action<string> _logAction;
 
         static EventLogger()
         {
@@ -16,12 +16,18 @@ namespace FileTransferClient.Infrastructure.Logging
                 .CreateLogger();
         }
 
+        public static void Initialize(Action<string> logAction)
+        {
+            _logAction = logAction;
+        }
+
         /// <summary>
         /// Logs an informational message.
         /// </summary>
         public static void LogInfo(string message)
         {
             _logger.Information(message);
+            _logAction?.Invoke($"INFO: {message}");
         }
 
         /// <summary>
@@ -30,6 +36,7 @@ namespace FileTransferClient.Infrastructure.Logging
         public static void LogWarning(string message)
         {
             _logger.Warning(message);
+            _logAction?.Invoke($"WARNING: {message}");
         }
 
         /// <summary>
@@ -38,6 +45,7 @@ namespace FileTransferClient.Infrastructure.Logging
         public static void LogError(string message, Exception ex = null)
         {
             _logger.Error(ex, message);
+            _logAction?.Invoke($"ERROR: {message} - {ex?.Message}");
         }
     }
 }

@@ -12,6 +12,8 @@ using System;
 using SimpleInjector;
 using Microsoft.EntityFrameworkCore;
 using FileTransferClient.Presentation.Views;
+using System.IO;
+using Newtonsoft.Json.Linq;
 
 namespace FileTransferClient.Core.DI
 {
@@ -25,7 +27,7 @@ namespace FileTransferClient.Core.DI
         public static void Configure()
         {
             // Register Views (UI)
-            _container.Register<IMainView, MainForm>(Lifestyle.Singleton);
+            _container.Register<FileTransferClient.Presentation.Contracts.IMainView, MainForm>(Lifestyle.Singleton);
             _container.Register<IFileBrowserView, FileBrowserControl>(Lifestyle.Singleton);
 
             // Register Presenters
@@ -45,12 +47,19 @@ namespace FileTransferClient.Core.DI
             _container.Register(() =>
             {
                 var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-                optionsBuilder.UseSqlServer("Server=localhost;Database=master;Trusted_Connection=True;TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("data source=DESKTOP-CVVHELJ;initial catalog=master;Trusted_Connection=True;TrustServerCertificate=True;");
                 return optionsBuilder.Options;
             }, Lifestyle.Singleton);
 
+            // Read encryption setting from appsettings.json
+            var configFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "appsettings.json");
+            var json = File.ReadAllText(configFilePath);
+            var jsonObj = JObject.Parse(json);
+            string encryption = jsonObj["EncryptionSettings"]["EncryptionType"].ToString();
+
             // Register File Transfer Strategies
-            _container.Collection.Register<IFileTransferStrategy>(new[] { typeof(FtpStrategy), typeof(SftpStrategy) });
+            _container.Register<IFileTransferStrategy>(() => new FtpStrategy(encryption), Lifestyle.Singleton);
+            _container.Collection.Register<IFileTransferStrategy>(new[] { typeof(SftpStrategy) });
 
             // Verify the container configuration
             _container.Verify();

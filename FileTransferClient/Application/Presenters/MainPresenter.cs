@@ -1,11 +1,17 @@
 ﻿using System;
 using System.Runtime.Versioning;
 using FileTransferClient.Application.Contracts;
-using FileTransferClient.Presentation.Contracts;
+
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FileTransferClient.Presentation.Views;
 using FileTransferClient.Domain.Models;
+using FileTransferClient.Infrastructure.FileTransfer;
+using FileTransferClient.Domain.Models.Transfer;
+using FileTransferClient.Domain.Services;
+using FileTransferClient.Domain.Models.Connection;
+using FileTransferClient.Application.Factories;
+using FileTransferClient.Presentation.Contracts;
 
 namespace FileTransferClient.Application.Presenters
 {
@@ -28,8 +34,8 @@ namespace FileTransferClient.Application.Presenters
             {
                 _view.ConnectClicked += OnConnectClicked;
                 _view.OpenTransferQueueClicked += OnOpenTransferQueueClicked;
-                // Subscribe to other form event
-                _view.EnqueueFileClicked += OnEnqueueFileClicked;
+                _view.EnqueueFileClicked += OnEnqueueFileClickedAsync;
+                _view.ViewProfilesClicked += OnViewProfilesClicked; // Subscribe to new event
             }
         }
 
@@ -41,15 +47,39 @@ namespace FileTransferClient.Application.Presenters
         {
             try
             {
-                var profiles = await _profileManager.GetAllProfilesAsync();
-                if (profiles.Count == 0)
+                var serverAddress = _view.ServerAddress;
+                var portNumber = _view.PortNumber;
+                var username = _view.Username;
+                var password = _view.Password;
+                var encryption = _view.Encryption; // Get the encryption method
+
+                if (string.IsNullOrEmpty(serverAddress) || string.IsNullOrEmpty(username))
                 {
-                    _view.ShowMessage("No server profiles found. Please add one.", "Warning", MessageBoxIcon.Warning);
+                    _view.ShowMessage("Please provide all connection details.", "Warning", MessageBoxIcon.Warning);
                     return;
                 }
 
-                // TODO: Show server selection dialog
-                _view.ShowMessage("Server connection initiated.", "Info", MessageBoxIcon.Information);
+                var profile = new ServerProfile(serverAddress, portNumber, username, password);
+                IFileTransferStrategy transferStrategy;
+
+                if (_view.IsFtp)
+                {
+                    transferStrategy = TransferServiceFactory.CreateStrategy("ftp", encryption);
+                }
+                else if (_view.IsSftp)
+                {
+                    transferStrategy = TransferServiceFactory.CreateStrategy("sftp");
+                }
+                else
+                {
+                    _view.ShowMessage("Please select either FTP or SFTP.", "Warning", MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Test connection
+                await transferStrategy.TestConnectionAsync(profile);
+
+                _view.ShowMessage("Server connection successful.", "Info", MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -72,10 +102,36 @@ namespace FileTransferClient.Application.Presenters
         /// Handles file enqueue logic.
         /// </summary>
         [SupportedOSPlatform("windows6.1")]
-        private void OnEnqueueFileClicked(object sender, FileItem e)
+        private async void OnEnqueueFileClickedAsync(object sender, FileItem e)
         {
             // Handle file enqueue logic here
-            _view.ShowMessage($"File {e.Name} enqueued.", "Info", MessageBoxIcon.Information);
+            try
+            {
+                await _transferQueue.EnqueueTransferAsync(e);
+                _view.ShowMessage($"File {e.Name} enqueued.", "Info", MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                _view.ShowMessage($"Error enqueuing file: {ex.Message}", "Error", MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Handles viewing profiles logic.
+        /// </summary>
+        [SupportedOSPlatform("windows6.1")]
+        private async void OnViewProfilesClicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var profiles = await _profileManager.GetAllProfilesAsync();
+                var profileListForm = new ProfileListForm(profiles);
+                profileListForm.Show();
+            }
+            catch (Exception ex)
+            {
+                _view.ShowMessage($"Error: {ex.Message}", "Error", MessageBoxIcon.Error);
+            }
         }
 
         /// <summary>
@@ -100,8 +156,8 @@ namespace FileTransferClient.Application.Presenters
                     // Unsubscribe from view events
                     _view.ConnectClicked -= OnConnectClicked;
                     _view.OpenTransferQueueClicked -= OnOpenTransferQueueClicked;
-                    // Unsubscribe from other form event
-                    _view.EnqueueFileClicked -= OnEnqueueFileClicked;
+                    _view.EnqueueFileClicked -= OnEnqueueFileClickedAsync;
+                    _view.ViewProfilesClicked -= OnViewProfilesClicked; // Unsubscribe from new event
                 }
 
                 _disposed = true;
@@ -114,4 +170,8 @@ namespace FileTransferClient.Application.Presenters
             await Task.FromResult(0);
         }
     }
+    // Add the missing property to the IMainView interface
+    
 }
+
+

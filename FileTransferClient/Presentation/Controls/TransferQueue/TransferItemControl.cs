@@ -6,10 +6,6 @@ namespace FileTransferClient.Presentation.Controls.TransferQueue
 {
     public partial class TransferItemControl : UserControl
     {
-        private Label lblFileName; // Add this line
-        private ProgressBar progressBar; // Add this line
-        private Button btnCancel; // Add this line
-
         public TransferJob Job { get; }
 
         public TransferItemControl(TransferJob job)

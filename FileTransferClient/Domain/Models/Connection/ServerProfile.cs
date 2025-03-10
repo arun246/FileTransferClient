@@ -2,6 +2,7 @@
 using FluentFTP;
 using System.Net;
 using System;
+using Renci.SshNet; // Add this for SFTP
 
 namespace FileTransferClient.Domain.Models.Connection
 {
@@ -18,7 +19,7 @@ namespace FileTransferClient.Domain.Models.Connection
             if (string.IsNullOrWhiteSpace(host)) throw new ArgumentException("Host is required");
             if (port <= 0) throw new ArgumentException("Port must be greater than zero");
             if (string.IsNullOrWhiteSpace(username)) throw new ArgumentException("Username is required");
-            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentException("Password is required");
+            
 
             Host = host;
             Port = port;
@@ -51,6 +52,28 @@ namespace FileTransferClient.Domain.Models.Connection
                 else
                 {
                     Console.WriteLine("Failed to connect to FTP server.");
+                }
+            }
+        }
+
+        public void ConnectToSftp()
+        {
+            using (var client = new SftpClient(Host, Port, Username, Password))
+            {
+                client.Connect();
+
+                if (client.IsConnected)
+                {
+                    Console.WriteLine("Connected to SFTP server successfully.");
+                    // Example: List directory contents
+                    foreach (var item in client.ListDirectory("."))
+                    {
+                        Console.WriteLine(item.FullName);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Failed to connect to SFTP server.");
                 }
             }
         }

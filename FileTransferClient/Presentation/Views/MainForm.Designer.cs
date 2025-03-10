@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace FileTransferClient.Presentation.Views
 {
-    partial class MainForm : System.Windows.Forms.Form
+    partial class MainForm : Form
     {
         /// <summary>
         /// Required designer variable.

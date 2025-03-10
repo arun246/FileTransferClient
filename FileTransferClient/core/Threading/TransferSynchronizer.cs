@@ -3,6 +3,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using FileTransferClient.Domain.Models.Transfer;
 using FileTransferClient.Domain.Models; // Corrected namespace
+using FileTransferClient.Infrastructure.FileTransfer; // Add this to use FtpStrategy
+using System.Windows.Forms;
+using System; // Add this to use Control for UI updates
 
 namespace FileTransferClient.Core.Threading
 {
@@ -10,11 +13,15 @@ namespace FileTransferClient.Core.Threading
     {
         private readonly BlockingCollection<TransferJob> _transferQueue;
         private readonly CancellationTokenSource _cancellationTokenSource;
+        private readonly ProgressBar _progressBar; // Add a reference to the progress bar
+        private readonly string _encryption; // Add a reference to the encryption method
 
-        public TransferSynchronizer()
+        public TransferSynchronizer(ProgressBar progressBar, string encryption)
         {
             _transferQueue = new BlockingCollection<TransferJob>(new ConcurrentQueue<TransferJob>());
             _cancellationTokenSource = new CancellationTokenSource();
+            _progressBar = progressBar; // Initialize the progress bar reference
+            _encryption = encryption; // Initialize the encryption method reference
         }
 
         /// <summary>
@@ -55,8 +62,12 @@ namespace FileTransferClient.Core.Threading
             try
             {
                 job.MarkInProgress();
-                // Simulate the transfer operation
-                await Task.Delay(1000); // Replace with actual transfer logic
+                var ftpStrategy = new FtpStrategy(_encryption);
+                await ftpStrategy.TransferFileAsync(job, progress =>
+                {
+                    // Update progress bar here
+                    UpdateProgressBar(progress.ProgressPercentage);
+                });
                 job.MarkCompleted();
             }
             catch
@@ -64,5 +75,19 @@ namespace FileTransferClient.Core.Threading
                 job.MarkFailed();
             }
         }
+
+        private void UpdateProgressBar(int progressPercentage)
+        {
+            if (_progressBar.InvokeRequired)
+            {
+                _progressBar.Invoke(new Action(() => _progressBar.Value = progressPercentage));
+            }
+            else
+            {
+                _progressBar.Value = progressPercentage;
+            }
+        }
     }
 }
+
+

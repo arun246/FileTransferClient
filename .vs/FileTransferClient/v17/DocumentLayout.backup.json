@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\infrastructure\\data\\profiles\\profilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\infrastructure\\data\\profiles\\profilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\application\\services\\profilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\application\\services\\profilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\application\\contracts\\iprofilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\application\\contracts\\iprofilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\core\\di\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\core\\di\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\presentation\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\presentation\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\application\\services\\transfercoordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\application\\services\\transfercoordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\presentation\\controls\\filebrowser\\filebrowsercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\presentation\\controls\\filebrowser\\filebrowsercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\presentation\\controls\\filebrowser\\filebrowsercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\presentation\\controls\\filebrowser\\filebrowsercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\infrastructure\\filetransfer\\ftpstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\infrastructure\\filetransfer\\ftpstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\domain\\services\\ifiletransferstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\domain\\services\\ifiletransferstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|c:\\users\\b arun\\source\\repos\\filetransferclient\\filetransferclient\\presentation\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ADA8B526-01D4-4DD0-A6E7-ECDC16EA29B1}|FileTransferClient\\FileTransferClient.csproj|solutionrelative:filetransferclient\\presentation\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,81 +42,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProfileRepository.cs",
-              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Infrastructure\\Data\\Profiles\\ProfileRepository.cs",
-              "RelativeDocumentMoniker": "FileTransferClient\\Infrastructure\\Data\\Profiles\\ProfileRepository.cs",
-              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Infrastructure\\Data\\Profiles\\ProfileRepository.cs",
-              "RelativeToolTip": "FileTransferClient\\Infrastructure\\Data\\Profiles\\ProfileRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T14:32:59.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProfileManager.cs",
-              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Application\\Services\\ProfileManager.cs",
-              "RelativeDocumentMoniker": "FileTransferClient\\Application\\Services\\ProfileManager.cs",
-              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Application\\Services\\ProfileManager.cs",
-              "RelativeToolTip": "FileTransferClient\\Application\\Services\\ProfileManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Title": "FileBrowserControl.cs",
+              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs",
+              "RelativeDocumentMoniker": "FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs",
+              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs",
+              "RelativeToolTip": "FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T14:30:28.391Z",
+              "WhenOpened": "2025-03-10T14:18:41.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IProfileManager.cs",
-              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Application\\Contracts\\IProfileManager.cs",
-              "RelativeDocumentMoniker": "FileTransferClient\\Application\\Contracts\\IProfileManager.cs",
-              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Application\\Contracts\\IProfileManager.cs",
-              "RelativeToolTip": "FileTransferClient\\Application\\Contracts\\IProfileManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FileBrowserControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs",
+              "RelativeDocumentMoniker": "FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs",
+              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs [Design]",
+              "RelativeToolTip": "FileTransferClient\\Presentation\\Controls\\FileBrowser\\FileBrowserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T14:30:27.062Z",
+              "WhenOpened": "2025-03-10T14:18:33.929Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IFileTransferStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Domain\\Services\\IFileTransferStrategy.cs",
+              "RelativeDocumentMoniker": "FileTransferClient\\Domain\\Services\\IFileTransferStrategy.cs",
+              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Domain\\Services\\IFileTransferStrategy.cs",
+              "RelativeToolTip": "FileTransferClient\\Domain\\Services\\IFileTransferStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T14:13:16.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ServiceLocator.cs",
-              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\core\\DI\\ServiceLocator.cs",
-              "RelativeDocumentMoniker": "FileTransferClient\\core\\DI\\ServiceLocator.cs",
-              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\core\\DI\\ServiceLocator.cs",
-              "RelativeToolTip": "FileTransferClient\\core\\DI\\ServiceLocator.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCMAAABaAAAAAAAAAA==",
+              "Title": "FtpStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Infrastructure\\FileTransfer\\FtpStrategy.cs",
+              "RelativeDocumentMoniker": "FileTransferClient\\Infrastructure\\FileTransfer\\FtpStrategy.cs",
+              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Infrastructure\\FileTransfer\\FtpStrategy.cs",
+              "RelativeToolTip": "FileTransferClient\\Infrastructure\\FileTransfer\\FtpStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T14:24:48.712Z",
+              "WhenOpened": "2025-03-10T13:48:01.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Views\\MainForm.cs",
               "RelativeDocumentMoniker": "FileTransferClient\\Presentation\\Views\\MainForm.cs",
               "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Views\\MainForm.cs",
               "RelativeToolTip": "FileTransferClient\\Presentation\\Views\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAgwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T11:00:14.081Z",
+              "WhenOpened": "2025-03-10T13:34:56.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TransferCoordinator.cs",
-              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Application\\Services\\TransferCoordinator.cs",
-              "RelativeDocumentMoniker": "FileTransferClient\\Application\\Services\\TransferCoordinator.cs",
-              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Application\\Services\\TransferCoordinator.cs",
-              "RelativeToolTip": "FileTransferClient\\Application\\Services\\TransferCoordinator.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwCIAAAApAAAAAAAAAA==",
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "FileTransferClient\\Presentation\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\B Arun\\source\\repos\\FileTransferClient\\FileTransferClient\\Presentation\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "FileTransferClient\\Presentation\\Views\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T10:57:30.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T13:34:33.138Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

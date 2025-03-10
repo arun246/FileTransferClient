@@ -195,3 +195,5 @@ C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\bin\Debug\net
 C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\bin\Debug\net9.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\bin\Debug\net9.0-windows\System.Diagnostics.EventLog.dll
 C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\net9.0-windows\FileTransferClient.sourcelink.json
+C:\Users\B Arun\source\repos\FileTransferClient\FileTransferClient\obj\Debug\net9.0-windows\FileTransferClient.Presentation.Views.ProfileListForm.resources
